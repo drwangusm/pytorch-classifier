@@ -11,6 +11,8 @@ from utils import utils_aug
 from utils.utils import predict_single_image, cam_visual, dict_to_PrettyTable, select_device, model_fuse
 from utils.utils_model import select_model
 
+plt.rcParams['font.sans-serif'] = ['SimHei']
+
 def set_seed(seed):
     random.seed(seed)
     np.random.seed(seed)
