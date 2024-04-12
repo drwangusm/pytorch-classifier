@@ -41,7 +41,7 @@ def parse_opt():
     parser.add_argument('--batch_size', type=int, default=64, help='batch size (-1 for autobatch)')
     parser.add_argument('--epoch', type=int, default=100, help='epoch')
     parser.add_argument('--save_path', type=str, default=r'runs/exp', help='save path for model and log')
-    parser.add_argument('--resume', action="store_true",default=True, help='resume from save_path traning')
+    parser.add_argument('--resume', action="store_true",default=False, help='resume from save_path traning')
 
     # optimizer parameters
     parser.add_argument('--loss', type=str, choices=['PolyLoss', 'CrossEntropyLoss', 'FocalLoss'],
